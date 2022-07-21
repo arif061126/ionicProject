@@ -9,9 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { StoreModule } from '@ngrx/store';
 import {AppStoreModule} from "./store/AppStoreModule";
 import {StoreDevtoolsModule} from "@ngrx/store-devtools";
+import {LoadingComponent} from "./components/loading/loading.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoadingComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
