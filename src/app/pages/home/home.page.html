@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://www.linkpicture.com/q/man_8.png">
+      </ion-avatar>
+      <ion-label>
+        <h1>Arif Ahmed</h1>
+        <p>Gathered: <span class="money">15,00 €</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+  <app-pickup-call-card
+    [hasHeader]="true"
+
+    createdAt="12.08.2022 12:00:00"
+    note="We have two bags that are full, one with plastic and other one with glass."
+    status="On Hold"
+    updatedAt="23.08.2022 15:00:00">
+    <!--<ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>-->
+    <ion-button color="success" size="full" fill="clear" footer (click)="pickupCalls()">See all...</ion-button>
+  </app-pickup-call-card>
+
+
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="success">
+    <ion-icon name="add" (click)="pickupCall()"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pickup call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://www.linkpicture.com/q/Screenshot-2022-07-17-at-16.47.43.png">
+  <ion-card>
+    <ion-card-content>
+      <p>Address: samplestr. 11</p>
+      <p>Complement: sample complement</p>
+      <p>Neighborhood: sample neighborhood</p>
+      <p>Zip code: 45881</p>
+      <p>City: Gelsenkirchen</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-label position="floating">Notes</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button color="success" size="full" (click)="goToHome()">Create Pickup call</ion-button>
+
+</ion-content>
